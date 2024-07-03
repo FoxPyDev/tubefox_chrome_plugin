@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Video Downloader",
+  "version": "1.0",
+  "description": "Adds a button to download YouTube videos",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
